@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alert Handling Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .alert-btn {
+            background-color: #4CAF50;
+        }
+
+        .confirm-btn {
+            background-color: #2196F3;
+        }
+
+        .prompt-btn {
+            background-color: #FF5722;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+
+    <script>
+        function simpleAlert() {
+            alert("This is a Simple Alert!");
+        }
+
+        function confirmationAlert() {
+            confirm("Do you want to continue?");
+        }
+
+        function promptAlert() {
+            prompt("Enter your name:");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Alert Popup Demo</h1>
+
+        <button class="alert-btn" onclick="simpleAlert()">Simple Alert</button>
+        <button class="confirm-btn" onclick="confirmationAlert()">Confirmation Alert</button>
+        <button class="prompt-btn" onclick="promptAlert()">Prompt Alert</button>
+    </div>
+</body>
+</html>
